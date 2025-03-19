@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שלומי רשף - פתרונות עיצוב פרמטרי ותכנון עירוני מבוסס AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SR</div>
+            <div class="nav-links">
+                <a href="#" class="active">בית</a>
+                <a href="#services">שירותים</a>
+                <a href="#blog">בלוג</a>
+                <a href="#about">אודות</a>
+                <a href="#contact">צור קשר</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div id="parametric-canvas"></div>
+        <div class="hero-content">
+            <h1>פתרונות עיצוב פרמטרי ו<span>תכנון עירוני מבוסס AI</span></h1>
+            <h2>כלים חדשניים ופתרונות חכמים לאדריכלים, מתכננים ואנשי מקצוע יצירתיים.</h2>
+            <button id="cta-button">גלה את העשייה שלי</button>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h2 class="section-title">השירותים שלי</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+                    </svg>
+                </div>
+                <h3>תכנון עירוני פרמטרי</h3>
+                <p>פתרונות עירוניים דינמיים המבוססים על בינה מלאכותית וכלים פרמטריים מתקדמים.</p>
+                <a href="#" class="service-link">למידע נוסף</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8Z" />
+                    </svg>
+                </div>
+                <h3>עיצוב פרמטרי ואמנות אלגוריתמית</h3>
+                <p>עיצובים גיאומטריים יצירתיים ומודלים אדריכליים באמצעות Rhino, Grasshopper, Blender ועוד.</p>
+                <a href="#" class="service-link">למידע נוסף</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2Z" />
+                    </svg>
+                </div>
+                <h3>בוטים וכלים דיגיטליים מותאמים אישית</h3>
+                <p>עוזרי AI, צ'טבוטים וכלים אוטומטיים לפישוט תהליכים מורכבים.</p>
+                <a href="#" class="service-link">למידע נוסף</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
+                    </svg>
+                </div>
+                <h3>כלי ניהול זמן חכם</h3>
+                <p>אפליקציה אינטואיטיבית לניהול זמן, להגברת פרודוקטיביות ולפישוט המשימות שלך.</p>
+                <a href="#" class="service-link">למידע נוסף</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="container">
+        <h2 class="section-title">מהבלוג שלי</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <h3>העתיד של תכנון עירוני עם AI</h3>
+                    <p>מגלים כיצד בינה מלאכותית משנה את האופן בו אנו מעצבים ומתכננים מרחבים עירוניים...</p>
+                    <a href="#" class="blog-link">קרא עוד</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <h3>עקרונות עיצוב פרמטרי</h3>
+                    <p>קונספטים וטכניקות עיקריות ליצירת מבנים גיאומטריים מורכבים באמצעות כלים פרמטריים...</p>
+                    <a href="#" class="blog-link">קרא עוד</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <h3>בניית כלים דיגיטליים מותאמים אישית</h3>
+                    <p>מדריך שלב אחר שלב לפיתוח כלים ייחודיים עבור תהליכי עיצוב אדריכלי ועירוני...</p>
+                    <a href="#" class="blog-link">קרא עוד</a>
+                </div>
+            </div>
+        </div>
+        <div class="center-button">
+            <a href="#" class="btn-secondary">צפה בכל הפוסטים</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about-wrapper">
+            <div class="about-image">
+                <div class="photo-placeholder"></div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title text-left">אודות</h2>
+                <p>אני שלומי רשף, מומחה לעיצוב פרמטרי ותכנון עירוני מבוסס AI. עם התמחות בכלי עיצוב חישוביים וטכנולוגיות מתקדמות, אני יוצר פתרונות חדשניים המחברים בין אדריכלות, תכנון עירוני ובינה מלאכותית.</p>
+                <p>העבודה שלי מתמקדת בפיתוח כלים דיגיטליים מותאמים אישית שמפשטים תהליכים מורכבים ומאפשרים גישות יעילות ויצירתיות יותר להתמודדות עם אתגרים עיצוביים.</p>
+                <a href="#" class="btn-secondary">קרא עוד עליי</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">צור קשר</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>מוכן לשתף פעולה?</h3>
+                <p>צור קשר כדי לדון בדרישות הפרויקט שלך, בשיתופי פעולה או בכל שאלה בנוגע לשירותים שלי.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bcdfd3d2c8dddfc8fccfd4d0d3d1c5ced9cfd4d9da92dfd3d1">[email&#160;protected]</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                        </svg>
+                        <span>תל אביב, ישראל</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="שמך" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="האימייל שלך" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="נושא">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="ההודעה שלך" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">שלח הודעה</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo">SR</div>
+                <p>פתרונות עיצוב פרמטרי ותכנון עירוני מבוסס AI</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>דפים</h4>
+                    <ul>
+                        <li><a href="#">בית</a></li>
+                        <li><a href="#services">שירותים</a></li>
+                        <li><a href="#blog">בלוג</a></li>
+                        <li><a href="#about">אודות</a></li>
+                        <li><a href="#contact">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>שירותים</h4>
+                    <ul>
+                        <li><a href="#">תכנון עירוני פרמטרי</a></li>
+                        <li><a href="#">עיצוב פרמטרי</a></li>
+                        <li><a href="#">בוטים וכלים דיגיטליים</a></li>
+                        <li><a href="#">כלי ניהול זמן חכם</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>קשר</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 שלומי רשף. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
